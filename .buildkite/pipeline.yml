@@ -4,7 +4,7 @@ steps:
   #   artifact_paths: "artifacts/*"
   - label: ":hammer: Customer Support - Tests"
     # command: "echo \"User: ${USER}\""
-    command: "environment \"${USER}\""
+    command: "environment.sh \"${USER}\""
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
 
