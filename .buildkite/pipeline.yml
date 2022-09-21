@@ -8,4 +8,4 @@ steps:
   - label: ":hammer: User"
     command: "echo \"User: ${USER}\""
   - label: ":padlock: Pass"
-    command: "echo \"Password: ${PASSWORD}""
+    command: "echo \"Password: ${PASSWORD}"

@@ -1,6 +1,5 @@
-#!/bin/bash
-set -euo pipefail
+
 echo '--- :house_with_garden: Setting up the environment'
 export USER='JohnDoe'
 export PASSWORD='Welcome@123'
-echo $USER
+echo "ENVIRONMENT VARS SET"
