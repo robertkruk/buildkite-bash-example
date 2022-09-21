@@ -3,7 +3,7 @@ steps:
   #   command: "script.sh"
   #   artifact_paths: "artifacts/*"
   - label: ":hammer: Customer Support - Tests"
-    command: environment $$USER
+    command: echo $$USER
     
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
