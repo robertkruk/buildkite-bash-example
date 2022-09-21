@@ -4,6 +4,10 @@ steps:
   #   artifact_paths: "artifacts/*"
   - label: ":hammer: Customer Support - Tests"
     command: echo "hi"
+    plugins:
+      docker#v3.5.0: 
+      user: root 
+      image: ubuntu
     
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
