@@ -7,5 +7,5 @@ steps:
 
   - label: ":hammer: User"
     command: "echo \"User: ${USER}\""
-  - label: ":padlock: Pass"
+  - label: ":🔒: Pass"
     command: "echo \"Password: ${PASSWORD}\""
