@@ -35,4 +35,7 @@ function inline_image {
 inline_image 'artifact://artifacts/image.gif' 'Rainbows'
 
 echo "foo"
-command: echo $USER $PASSWORD plugins: 
+echo $USER $PASSWORD 
+
+#plugins: 
+# docker#v3.5.0: user: root image: ubuntu 
