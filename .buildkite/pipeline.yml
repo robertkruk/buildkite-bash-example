@@ -10,4 +10,4 @@ steps:
   - label: :"foo"
     command: "echo ${USER}"
   - label: "ENVs"
-    command: "env && echo \${USER}"
+    command: "env && echo ${USER}"
