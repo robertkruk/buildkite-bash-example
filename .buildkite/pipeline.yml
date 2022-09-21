@@ -5,6 +5,6 @@ steps:
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
   - label: ":hammer: ENV"
-    command: "environment"
+    command: ".buildkite/hooks/environment"
   - label: ":hammer: Customer Support - Tests"
     command: "echo \"User: ${USER}\""
