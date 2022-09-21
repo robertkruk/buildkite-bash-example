@@ -18,8 +18,8 @@ steps:
       - "yarn run test"
     plugins:
       - docker#v4.2.1:
-          image: "node:7"
-          always-pull: true
-          environment:
-            - "MY_SECRET_KEY"
-            - "MY_SPECIAL_BUT_PUBLIC_VALUE=kittens"
+          image: "ubuntu"
+          # always-pull: true
+          # environment:
+          #   - "MY_SECRET_KEY"
+          #   - "MY_SPECIAL_BUT_PUBLIC_VALUE=kittens"
