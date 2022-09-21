@@ -5,3 +5,4 @@ steps:
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
   - label: "hammer: Tests"
+    command: echo "Test"
