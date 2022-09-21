@@ -7,7 +7,5 @@ steps:
 
   - label: ":hammer: Customer Support - Tests"
     command: "echo \"User: ${USER}\""
-  - label: :"foo"
-    command: "echo ${USER}"
   - label: ":hammer: Check ENV VARs"
     command: "echo ${USER} $${PASSWORD)"
