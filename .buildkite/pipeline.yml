@@ -3,7 +3,7 @@ steps:
   #   command: "script.sh"
   #   artifact_paths: "artifacts/*"
   - label: ":hammer: Customer Support - Tests"
-    command: scripts/trigger-github-deploy
+    command: scripts/secrets
     
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
