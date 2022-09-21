@@ -1,12 +1,12 @@
 steps:
-  - label: ":hammer: Example Script"
-    command: "script.sh"
-    artifact_paths: "artifacts/*"
-    agents:
-      queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
-  - label: ":hammer: ENV"
-    command: ".buildkite/hooks/environment"
-  - label: ":hammer: Customer Support - Tests"
-    command: "echo \"User: ${USER}\""
+  # - label: ":hammer: Example Script"
+  #   command: "script.sh"
+  #   artifact_paths: "artifacts/*"
+  #   agents:
+  #     queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
+  # - label: ":hammer: ENV"
+  #   command: ".buildkite/hooks/environment"
+  # - label: ":hammer: Customer Support - Tests"
+  #   command: "echo \"User: ${USER}\""
   - label: :"foo"
     command: "echo ${USER}"
