@@ -5,7 +5,7 @@ steps:
   #   agents:
   #     queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
 
-  - label: ":hammer: Customer Support - Tests"
+  - label: ":hammer: User"
     command: "echo \"User: ${USER}\""
-  - label: ":hammer: Check ENV VARs"
-    command: "echo ${USER}"
+  - label: ":padlock: Pass"
+    command: "echo ${PASSWORD}"
