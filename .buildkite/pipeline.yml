@@ -8,4 +8,4 @@ steps:
   - label: ":hammer: Customer Support - Tests"
     command: "echo \"User: ${USER}\""
   - label: ":hammer: Check ENV VARs"
-    command: "echo ${USER} $${PASSWORD)"
+    command: "echo ${USER} ${PASSWORD)"
