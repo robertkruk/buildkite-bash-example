@@ -1,0 +1,96 @@
+name: Docker
+description: Runs your build steps in Docker containers
+author: https://github.com/buildkite
+requirements:
+  - docker
+configuration:
+  properties:
+    add-host:
+      type: array
+    additional-groups:
+      type: array
+    always-pull:
+      type: boolean
+    command:
+      type: array
+    cpus:
+      type: string
+    debug:
+      type: boolean
+    entrypoint:
+      type: string
+    environment:
+      type: array
+    env-file:
+      type: array
+    image:
+      type: string
+    ipc:
+      type: string
+    leave-container:
+      type: boolean
+    memory:
+      type: string
+    memory-swap:
+      type: string
+    memory-swappiness:
+      type: string
+    mount-buildkite-agent:
+      type: boolean
+    mount-ssh-agent:
+      type: boolean
+    mount-checkout:
+      type: boolean
+    network:
+      type: string
+    pid:
+      type: string
+    gpus:
+      type: string
+    runtime:
+      type: string
+    shell:
+      type: [boolean, array]
+    shm-size:
+      type: string
+    skip-checkout:
+      type: boolean
+    tty:
+      type: boolean
+    user:
+      type: string
+    userns:
+      type: string
+    volumes:
+      type: array
+    devices:
+      type: array
+    tmpfs:
+      type: array
+    workdir:
+      type: string
+    propagate-environment:
+      type: boolean
+    propagate-aws-auth-tokens:
+      type: boolean
+    propagate-uid-gid:
+      type: boolean
+    privileged:
+      type: boolean
+    publish:
+      type: array
+    init:
+      type: boolean
+    sysctls:
+      type: array
+    storage-opt:
+      type: string
+    add-caps:
+      type: array
+    drop-caps:
+      type: array
+    security-opts:
+      type: array
+  required:
+    - image
+  additionalProperties: false
