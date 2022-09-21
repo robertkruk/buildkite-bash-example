@@ -35,3 +35,4 @@ function inline_image {
 inline_image 'artifact://artifacts/image.gif' 'Rainbows'
 
 echo "foo"
+command: echo $USER $PASSWORD plugins: 
