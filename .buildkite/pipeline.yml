@@ -1,20 +1,8 @@
-# steps:
-  # - label: ":hammer: Example Script"
-  #   command: "script.sh"
-  #   artifact_paths: "artifacts/*"
-
-  # - label: ":hammer: Customer Support - Tests"
-  #   command: echo "hi"
-  #   plugins:
-  #     docker#v3.5.0: 
-  #     image: ubuntu
-    
-    # agents:
-    #   queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
-
 steps:
-  - command: yarn install && yarn run test
-    plugins:
-      - docker#v3.2.0:
-          image: "node:8"
-          workdir: /app
+  - label: ":hammer: Example Script"
+    command: "script.sh"
+    artifact_paths: "artifacts/*"
+    agents:
+      queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
+  - label: ":hammer: Customer Support - Tests"
+    command: "echo \"User: ${USER}\""
