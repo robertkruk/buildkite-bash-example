@@ -1,1 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+
 echo "This is an example of a pre-command hook from .buildkite/hooks/pre-command"
+
+echo '--- :house_with_garden: Setting up the environment'
+export USER='JohnDoe'
+export PASSWORD='Welcome@123'
+echo $USER
