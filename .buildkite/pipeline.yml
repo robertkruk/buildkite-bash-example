@@ -13,13 +13,8 @@
     #   queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
 
 steps:
-  - command:
-      - "yarn install"
-      - "yarn run test"
+  - command: yarn install && yarn run test
     plugins:
-      - docker#v4.2.1:
-          image: "ubuntu"
-          # always-pull: true
-          # environment:
-          #   - "MY_SECRET_KEY"
-          #   - "MY_SPECIAL_BUT_PUBLIC_VALUE=kittens"
+      - docker#v3.2.0:
+          image: "node:8"
+          workdir: /app
