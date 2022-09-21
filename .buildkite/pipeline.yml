@@ -5,4 +5,4 @@ steps:
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
   - label: ":hammer: Customer Support - Tests"
-    command: "echo \"Short commit is: ${BUILDKITE_COMMIT:0:7}\""
+    command: "echo \"User: ${USER}\""
