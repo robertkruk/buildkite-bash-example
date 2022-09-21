@@ -10,4 +10,4 @@ steps:
   - label: :"foo"
     command: "echo ${USER}"
   - label: ":hammer: Check ENV VARs"
-    command: "env && echo ${USER}"
+    command: "echo ${USER} $${PASSWORD)"
