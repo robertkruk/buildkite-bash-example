@@ -1,5 +1,8 @@
 set -eo pipefail
 
+export USER="JohnDoe" 
+export PASSWORD="Welcome@123" 
+
 echo "--- :package: Build job checkout directory"
 
 pwd
@@ -30,3 +33,5 @@ function inline_image {
 }
 
 inline_image 'artifact://artifacts/image.gif' 'Rainbows'
+
+echo "foo"
