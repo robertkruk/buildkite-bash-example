@@ -9,5 +9,5 @@ steps:
     command: "echo \"User: ${USER}\""
   - label: :"foo"
     command: "echo ${USER}"
-  - label: "ENVs"
+  - label: ":hammer: Check ENV VARs"
     command: "env && echo ${USER}"
