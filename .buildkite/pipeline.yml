@@ -4,5 +4,5 @@ steps:
     artifact_paths: "artifacts/*"
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
-  - label: "hammer: Tests"
-    command: echo "Test"
+  - label: ":hammer: Customer Support - Tests"
+    command: echo $USER
