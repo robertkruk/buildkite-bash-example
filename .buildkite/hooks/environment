@@ -3,4 +3,3 @@ set -euo pipefail
 echo '--- :house_with_garden: Setting up the environment'
 export USER='JohnDoe'
 export PASSWORD='Welcome@123'
-export GITHUB_RELEASE_ACCESS_KEY='xxx'
