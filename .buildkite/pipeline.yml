@@ -1,4 +1,6 @@
 steps:
+  - label: "Hello world"
+    command: echo "Hello world, this is another test!"
   - label: ":hammer: Example Script"
     command: "script.sh"
     artifact_paths: "artifacts/*"
